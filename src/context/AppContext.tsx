@@ -9,10 +9,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 const LOCAL_STORAGE_KEY = "drkmode";
 
 export enum ThemePalette { //definerer farger og fonter som kan brukes i temaet
-  DARKBG = "#024262",
-  DARKBUTTON = "#011a27",
+  // DARKBG = "#024262",
+  DARKBG = "ffffff",
+  // DARKBUTTON = "#011a27",
   LIGHTBG = "#ffffff",
-  LIME = "#C8FA5F",
+  // LIME = "#C8FA5F",
+  LIME = "#949aaa",
 }
 
 const darkTheme = createTheme({

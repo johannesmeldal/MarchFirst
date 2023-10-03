@@ -1,0 +1,31 @@
+.nav-container {
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  height: 2360px;
+  width: 30%;
+  background-color: #1c4673;
+  text-align: center;
+  font-size: 15px;
+}
+
+.nav-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.nav-container li {
+  display: inline;
+  margin-right: 50px; /* Adjust the spacing between links */
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-container a:hover {
+  text-decoration: underline;
+}

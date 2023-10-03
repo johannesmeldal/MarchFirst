@@ -4,6 +4,7 @@ import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
 import Home from "./Components/Home";
 import "./App.css";
 import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 
 interface Props {
   darkmode: boolean;
@@ -16,7 +17,8 @@ const App = ({ darkmode, setDarkmode }: Props) => {
   };
 
   return (
-    <div>
+    <div >
+      <Navbar/>
       <Home />
       <Footer/>
     </div>
