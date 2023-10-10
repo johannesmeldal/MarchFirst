@@ -1,12 +1,16 @@
 .nav-container {
   position: absolute;
-  top: 200px;
+  top: 30%;
   right: 0px;
-  height: 2360px;
+  bottom: 10%;
+  height: 130%;
   width: 30%;
   background-color: #1c4673;
   text-align: center;
   font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav-container ul {
@@ -16,8 +20,8 @@
 }
 
 .nav-container li {
-  display: inline;
-  margin-right: 50px; /* Adjust the spacing between links */
+  display: inline-block;
+  margin: 0 20px;
 }
 
 .nav-container a {

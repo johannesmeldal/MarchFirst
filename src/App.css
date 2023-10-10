@@ -1,3 +1,10 @@
-.container {
-  max-width: 100%;
+.app-container {
+  top: 40%;
+  background-color: #f0f0f0;
+  height: fit-content;
+  padding: 20px;
+  position: absolute;
+  width: 80%;
+  z-index: 2;
+  /* overflow: scroll; */
 }

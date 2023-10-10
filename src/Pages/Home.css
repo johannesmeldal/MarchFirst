@@ -1,0 +1,29 @@
+.background {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.background img {
+  width: 100vw;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.header {
+  background-color: #fff; /* Set the background color of each grid item */
+  padding: 40px; /* Add padding to the grid items */
+  /* box-sizing: border-box; */
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}

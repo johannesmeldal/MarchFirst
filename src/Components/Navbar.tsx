@@ -1,18 +1,25 @@
 import React from "react";
 import "./Navbar.css";
+import Typography from "@mui/material/Typography";
 
 export default function Navbar() {
   return (
     <div className="nav-container">
       <ul>
         <li>
-          <a href="#services">Services</a>
+          <Typography component="a" href="Services">
+            SERVICES
+          </Typography>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <Typography component="a" href="aboutus">
+            ABOUT US
+          </Typography>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Typography component="a" href="contact">
+            CONTACT
+          </Typography>
         </li>
       </ul>
     </div>

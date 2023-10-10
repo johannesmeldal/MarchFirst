@@ -3,7 +3,6 @@ import { useState } from "react";
 // import { ThemeConfig } from './context/theme.config';
 import { ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
-import App from "../App";
 import CssBaseline from "@mui/material/CssBaseline";
 
 const LOCAL_STORAGE_KEY = "drkmode";
@@ -75,7 +74,7 @@ const lightTheme = createTheme({
 });
 
 function AppContext() {
-  const [darkmode, setDarkmode] = useState<boolean>(
+  const [darkmode] = useState<boolean>(
     localStorage.getItem(LOCAL_STORAGE_KEY) === "true" ? true : false
   );
 
@@ -88,7 +87,7 @@ function AppContext() {
   return (
     <ThemeProvider theme={darkmode ? darkTheme : lightTheme}>
       <CssBaseline />
-      <App darkmode={darkmode} setDarkmode={setDarkmode} />
+      {/* <App darkmode={darkmode} setDarkmode={setDarkmode} /> */}
     </ThemeProvider>
   );
 }
