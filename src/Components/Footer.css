@@ -1,8 +1,9 @@
 .foot {
   margin-top: 50vh;
-  bottom: 0;
   width: 100%;
-  height: 35vh;
+  height: 100%;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
   background-color: #024f76;
   display: flex;
   flex-direction: row;
