@@ -13,6 +13,7 @@ export default function Home() {
           <CardContent>
             <Typography variant="h4" gutterBottom>
               Rådgiving
+              <hr />
             </Typography>
             <Typography variant="body1">
               Marchfirst tilbyr alle typer finansiell rådgivning. Marchfirst er
@@ -30,10 +31,11 @@ export default function Home() {
           </CardContent>
         </Card>
         <div className="grid-container">
-          <Card>
+          <Card sx={{ padding: "5vh" }}>
             <CardContent>
               <Typography variant="h4" gutterBottom>
                 Salg av selskaper
+                <hr />
               </Typography>
               <Typography variant="body1">
                 Vurderer du å selge virksomheten din? Vi hjelper klienter i å
@@ -46,10 +48,11 @@ export default function Home() {
               </Typography>
             </CardContent>
           </Card>
-          <Card>
+          <Card sx={{ padding: "5vh" }}>
             <CardContent>
               <Typography variant="h4" gutterBottom>
                 Strategiske allianser & partnersøk
+                <hr />
               </Typography>
               <Typography variant="body1">
                 Vi bistår ofte klienter som søker den rette strategiske
@@ -60,10 +63,11 @@ export default function Home() {
               </Typography>
             </CardContent>
           </Card>
-          <Card>
+          <Card sx={{ padding: "5vh" }}>
             <CardContent>
               <Typography variant="h4" gutterBottom>
                 Verdivurderinger
+                <hr />
               </Typography>
               <Typography variant="body1">
                 Lurer du på hva bedriften din er verdt eller hvilket maksimale
@@ -74,10 +78,11 @@ export default function Home() {
               </Typography>
             </CardContent>
           </Card>
-          <Card>
+          <Card sx={{ padding: "5vh" }}>
             <CardContent>
               <Typography variant="h4" gutterBottom>
                 Oppkjøp & Fusjoner
+                <hr />
               </Typography>
               <Typography variant="body1">
                 Vi hjelper våre kunder å kjøpe selskaper, aksjer eller

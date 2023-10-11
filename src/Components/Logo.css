@@ -1,6 +1,6 @@
 .logo-container {
-  border-style: solid;
-  border-color: rgb(127, 255, 212);
+  /* border-style: solid;
+  border-color: rgb(127, 255, 212); */
   width: 100vw;
   height: 40vh;
   display: flex;
@@ -22,34 +22,44 @@
 .language-chooser {
   width: 10vw;
   margin-right: 3vw;
-  border-style: solid;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.language-chooser > div {
-  padding: 8px;
-  margin: 4px;
-}
-
-.language-chooser img {
-  height: 100%;
+  padding: 10px;
 }
 
 .activeLang {
-  border-bottom: 4px solid #7ccdf5;
+  border-bottom: 4px solid #00aeef;
+  /* border: 1px solid #7ccdf5; */
+}
+
+.inactiveLang {
+  height: 2.5vh;
+  /* border: 1px solid black; */
+  overflow: hidden;
 }
 
 .flag {
   z-index: 1;
-  width: 3vw;
+  height: 2vh;
   margin: 2px;
 }
 
 .flag:hover {
   cursor: pointer;
   filter: grayscale(0%) !important;
+}
+
+.underline-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line-container {
+  border-style: solid;
+  width: 10vw;
 }
 
 /* 

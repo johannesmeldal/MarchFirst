@@ -1,9 +1,10 @@
 import React from "react";
+import "./Services.css";
 
 export default function Services() {
   return (
-    <>
-      <span>Services</span>
-    </>
+    <div className="service-container">
+      <h1>Services</h1>
+    </div>
   );
 }

@@ -1,5 +1,6 @@
 .nav-container {
-  bottom: 0;
+  z-index: 1;
+  top: 0;
   width: 40vw;
   height: 15vh;
   margin-left: 60vw;
@@ -10,6 +11,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .nav-container ul {
@@ -25,10 +28,11 @@
 
 .nav-container a {
   text-decoration: none;
-  color: #fff;
+  color: #b4daed;
   font-weight: bold;
 }
 
 .nav-container a:hover {
+  color: #fff;
   text-decoration: underline;
 }

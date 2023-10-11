@@ -44,32 +44,22 @@ export default function Footer() {
         <div className="grid-item2">
           <ul className="link-list">
             <li>
-              <Typography
-                className="link"
-                style={{ color: "white", textDecoration: "none" }}
-                component="a"
-                href="services"
-              >
+              <Typography className="link" component="a" href="/">
+                HOME
+              </Typography>
+            </li>
+            <li>
+              <Typography className="link" component="a" href="services">
                 SERVICES
               </Typography>
             </li>
             <li>
-              <Typography
-                className="link"
-                style={{ color: "white", textDecoration: "none" }}
-                component="a"
-                href="aboutus"
-              >
+              <Typography className="link" component="a" href="aboutus">
                 ABOUT US
               </Typography>
             </li>
             <li>
-              <Typography
-                className="link"
-                style={{ color: "white", textDecoration: "none" }}
-                component="a"
-                href="contact"
-              >
+              <Typography className="link" component="a" href="contact">
                 CONTACT
               </Typography>{" "}
             </li>

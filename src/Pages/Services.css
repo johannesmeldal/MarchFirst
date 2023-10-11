@@ -1,19 +1,10 @@
-.about-container {
+.service-container {
   width: 100%;
-  height: 100%;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #024f76;
   padding: 10vh 0 10vh 0;
-}
-
-.partner-div {
-  width: 100%;
-  height: 100%;
-  margin-top: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }

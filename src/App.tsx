@@ -4,14 +4,17 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router-dom";
 import Logo from "./Components/Logo";
+import BottomNav from "./Components/BottomNav";
+import Intro from "./Components/Intro";
 
 const App = () => {
   return (
     <>
       <Logo />
       <Navbar />
-      {/* <div className="app-container"></div> */}
+      <Intro/>
       <Outlet />
+      <BottomNav />
       <Footer />
     </>
   );

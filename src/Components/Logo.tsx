@@ -23,7 +23,7 @@ export default function Logo() {
         onClick={() => navigate("/")}
       />
       <div className="language-chooser">
-        <div className="activeLang">
+        <div className={language ? "inactiveLang" : "activeLang"}>
           <img
             onClick={() => handleLanguageChange("NOR")}
             className="flag"
@@ -34,7 +34,7 @@ export default function Logo() {
             }}
           />
         </div>
-        <div>
+        <div className={language ? "activeLang" : "inactiveLang"}>
           <img
             onClick={() => handleLanguageChange("ENG")}
             className="flag"

@@ -1,33 +1,34 @@
 .foot {
   margin-top: 50vh;
-  height: 50%;
+  bottom: 0;
   width: 100%;
+  height: 35vh;
   background-color: #024f76;
-  color: #fff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .foot-grid-container {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .grid-item1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border-style: solid; */
   text-align: left;
   width: 30%;
 }
 
 .grid-item2 {
-  /* border-style: solid; */
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -36,21 +37,51 @@
   height: 100%;
 }
 
-.link :hover {
+.link {
+  color: #b4daed;
+  text-decoration: none;
+}
+
+.link:hover {
   text-decoration: underline;
+  color: #ffff;
 }
 
 .grid-item3 {
-  /* border-style: solid; */
-  width: 30%;
-  padding: 20px;
+  height: 25vh;
+  margin-right: 5vw;
 }
 
-.Foot ul {
+ul {
   list-style: none;
-  padding: 0;
-  margin-left: 30px;
+  margin-left: 2vw;
 }
 
 .the-m {
+  width: 10vw;
+  margin-left: 10vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .foot {
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .foot-grid-container {
+    flex-direction: column;
+  }
+  .grid-item1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid-item2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid-item3 {
+    display: none;
+  }
 }

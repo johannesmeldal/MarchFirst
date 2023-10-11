@@ -7,6 +7,11 @@ export default function Navbar() {
     <div className="nav-container">
       <ul>
         <li>
+          <Typography component="a" href="/">
+            HOME
+          </Typography>
+        </li>
+        <li>
           <Typography component="a" href="Services">
             SERVICES
           </Typography>

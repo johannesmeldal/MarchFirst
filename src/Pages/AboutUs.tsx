@@ -9,7 +9,6 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import CardActionArea from "@mui/material/CardActionArea";
 import { Paper } from "@mui/material";
-import Divider from "@mui/material/Divider";
 
 export default function AboutUs() {
   const textListPetter = [
@@ -26,6 +25,10 @@ export default function AboutUs() {
 
   function handleClick(name: string) {
     setPerson(name);
+    if (name === "petter") {
+    }
+    if (name === "alex") {
+    }
   }
 
   function getDescription(name: string) {
@@ -70,14 +73,20 @@ export default function AboutUs() {
             bgcolor: "primary.main",
             color: "primary.contrastText",
             maxWidth: "36%",
+            boxShadow: person === "petter" ? "10" : "0",
+            marginRight: "10vw",
             "&:hover": {
               bgcolor: "primary.dark",
-              boxShadow: 3,
+              boxShadow: 15,
             },
           }}
         >
           <CardActionArea>
-            <img style={{ width: "100%" }} src={petter} alt="person" />
+            <img
+              style={{ width: "100%", height: "50vh", objectFit: "cover" }}
+              src={petter}
+              alt="person"
+            />
             <CardContent>
               <Typography variant="h5" component="div">
                 Petter Mannsverk Andresen
@@ -86,7 +95,9 @@ export default function AboutUs() {
                 FOUNDING PARTNER
               </Typography>
               <Typography variant="body2">
-                Telefon: +47 951 46 999 <br />
+                <br />
+                Telefon: +47 951 46 999
+                <br /> <br />
                 E-post: pma@marchfirst.no
               </Typography>
             </CardContent>
@@ -98,14 +109,19 @@ export default function AboutUs() {
             bgcolor: "primary.main",
             color: "primary.contrastText",
             maxWidth: "36%",
+            boxShadow: person === "alex" ? "10" : "0",
             "&:hover": {
               bgcolor: "primary.dark",
-              boxShadow: 3,
+              boxShadow: 15,
             },
           }}
         >
           <CardActionArea>
-            <img style={{ width: "100%" }} src={alex} alt="person" />
+            <img
+              style={{ width: "100%", height: "50vh", objectFit: "cover" }}
+              src={alex}
+              alt="person"
+            />
             <CardContent>
               <Typography variant="h5" component="div">
                 Alexander Åbyholm
@@ -114,7 +130,9 @@ export default function AboutUs() {
                 MANAGING PARTNER
               </Typography>
               <Typography variant="body2">
+                <br />
                 Telefon: +47 995 44 421 <br />
+                <br />
                 E-post: aa@marchfirst.no
               </Typography>
             </CardContent>
@@ -124,7 +142,7 @@ export default function AboutUs() {
       <Paper
         elevation={3}
         className="description-div"
-        sx={{ width: "90%", marginTop: "2%" }}
+        sx={{ width: "60vw", marginTop: "2%" }}
       >
         {getDescription(person)}
       </Paper>
