@@ -1,17 +1,58 @@
 .logo-container {
-  z-index: 1;
   border-style: solid;
   border-color: rgb(127, 255, 212);
   width: 100vw;
-  height: fit-content;
+  height: 40vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-image {
-  max-width: 30vw;
+  z-index: 1;
+  height: 20vh;
+  margin-left: 3vw;
 }
 
+.logo-image:hover {
+  cursor: pointer;
+}
+
+.language-chooser {
+  width: 10vw;
+  margin-right: 3vw;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.language-chooser > div {
+  padding: 8px;
+  margin: 4px;
+}
+
+.language-chooser img {
+  height: 100%;
+}
+
+.activeLang {
+  border-bottom: 4px solid #7ccdf5;
+}
+
+.flag {
+  z-index: 1;
+  width: 3vw;
+  margin: 2px;
+}
+
+.flag:hover {
+  cursor: pointer;
+  filter: grayscale(0%) !important;
+}
+
+/* 
 .logo-container span {
   font-size: 20px;
   color: black;
@@ -32,15 +73,15 @@
 .top-line {
   width: 20%;
   height: auto;
-  /* border-style: solid; */
+  border-style: solid;
 }
 
 .bottom-line {
   width: 20%;
   height: auto;
-  /* border-style: solid; */
+  border-style: solid;
 }
 
 svg line {
   stroke: #b4daed;
-}
+} */
