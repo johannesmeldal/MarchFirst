@@ -6,7 +6,7 @@ import GoogleMaps from "./GoogleMaps";
 
 export default function Footer() {
   return (
-    <div className="Foot">
+    <div className="foot">
       {/* <img className="the-m" src={img} alt="M" /> */}
       <img className="the-m" src={img} alt="M" />
       <div className="foot-grid-container">
@@ -45,6 +45,7 @@ export default function Footer() {
           <ul className="link-list">
             <li>
               <Typography
+                className="link"
                 style={{ color: "white", textDecoration: "none" }}
                 component="a"
                 href="services"
@@ -54,6 +55,7 @@ export default function Footer() {
             </li>
             <li>
               <Typography
+                className="link"
                 style={{ color: "white", textDecoration: "none" }}
                 component="a"
                 href="aboutus"
@@ -63,6 +65,7 @@ export default function Footer() {
             </li>
             <li>
               <Typography
+                className="link"
                 style={{ color: "white", textDecoration: "none" }}
                 component="a"
                 href="contact"

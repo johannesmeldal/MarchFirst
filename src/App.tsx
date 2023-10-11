@@ -8,11 +8,10 @@ import Logo from "./Components/Logo";
 const App = () => {
   return (
     <>
-      <Navbar />
       <Logo />
-      <div className="app-container">
-        <Outlet />
-      </div>
+      <Navbar />
+      {/* <div className="app-container"></div> */}
+      <Outlet />
       <Footer />
     </>
   );

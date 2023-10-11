@@ -1,18 +1,15 @@
 .logo-container {
   z-index: 1;
-  position: absolute;
-  margin-left: 8%;
-  margin-top: 8%;
-  /* border-style: solid;
-  border-color: rgb(127, 255, 212); */
-  width: 50%;
+  border-style: solid;
+  border-color: rgb(127, 255, 212);
+  width: 100vw;
   height: fit-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .logo-image {
-  width: 50%;
+  max-width: 30vw;
 }
 
 .logo-container span {
