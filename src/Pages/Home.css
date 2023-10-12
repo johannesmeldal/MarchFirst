@@ -3,9 +3,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 4vw 4vw 0vw 4vw;
   background-color: #024f76;
-  /* box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .background img {
@@ -14,16 +12,18 @@
 }
 
 .header {
-  background-color: #fff; /* Set the background color of each grid item */
-  padding: 40px; /* Add padding to the grid items */
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 5vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 10vh;
+  margin-bottom: 3vh;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 3vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }

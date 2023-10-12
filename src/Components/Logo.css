@@ -26,18 +26,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
 }
 
 .activeLang {
   border-bottom: 4px solid #00aeef;
   /* border: 1px solid #7ccdf5; */
-}
-
-.inactiveLang {
-  height: 2.5vh;
-  /* border: 1px solid black; */
-  overflow: hidden;
 }
 
 .flag {
@@ -57,41 +50,36 @@
   justify-content: center;
 }
 
-.line-container {
-  border-style: solid;
-  width: 10vw;
-}
+@media screen and (max-width: 1000px) {
+  .logo-container {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* 
-.logo-container span {
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-  width: 400px;
-  margin-left: 40px;
-  margin-top: 95px;
-}
+  .logo-image {
+    margin-top: 5vh;
+    height: 13vh;
+  }
 
-.intro {
-  padding: 20px;
-  display: none;
-  flex-direction: row;
-  border-style: solid;
-  height: 10%;
-}
+  .language-chooser {
+    margin-left: 80vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1vh;
+  }
 
-.top-line {
-  width: 20%;
-  height: auto;
-  border-style: solid;
-}
+  .flag {
+    height: 2vh;
+    margin: 2px;
+  }
 
-.bottom-line {
-  width: 20%;
-  height: auto;
-  border-style: solid;
+  .underline-machine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-
-svg line {
-  stroke: #b4daed;
-} */

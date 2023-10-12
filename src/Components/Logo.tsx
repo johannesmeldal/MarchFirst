@@ -37,6 +37,9 @@ export default function Logo() {
             src={norwayflag}
             alt="NOR"
             style={{
+              width: "4vh",
+              height: "2vh",
+              objectFit: "cover",
               filter: language ? "grayscale(100%)" : "grayscale(0%)",
             }}
           />
@@ -48,6 +51,9 @@ export default function Logo() {
             src={ukflag}
             alt="ENG"
             style={{
+              width: "4vh",
+              height: "2vh",
+              objectFit: "cover",
               filter: language ? "grayscale(0%)" : "grayscale(100%)",
             }}
           />
