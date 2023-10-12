@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
+import { RecoilRoot } from "recoil";
 
 export const router = createBrowserRouter([
   {
@@ -34,5 +35,7 @@ export const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <RouterProvider router={router} />
+  <RecoilRoot>
+    <RouterProvider router={router} />
+  </RecoilRoot>
 );

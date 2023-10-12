@@ -4,14 +4,21 @@ import "./Logo.css";
 import { useNavigate } from "react-router-dom";
 import norwayflag from "../Images/flag_norway.png";
 import ukflag from "../Images/flag_uk.png";
+import { useRecoilState } from "recoil";
+import { recoilLanguage } from "../Recoil/atoms";
 
 export default function Logo() {
   const navigate = useNavigate();
 
-  const [language, setLanguage] = React.useState<boolean>(false);
+  const [language, setLanguage] = useRecoilState(recoilLanguage);
 
-  const handleLanguageChange = (language: string) => {
-    setLanguage(language === "ENG" ? true : false);
+  const handleLanguageChange = (lang: string) => {
+    setLanguage(lang === "ENG" ? true : false);
+    if (lang === "ENG") {
+      localStorage.setItem("language", JSON.stringify(true));
+    } else {
+      localStorage.setItem("language", JSON.stringify(false));
+    }
   };
 
   return (
