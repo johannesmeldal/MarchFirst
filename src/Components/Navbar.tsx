@@ -90,7 +90,7 @@ export default function Navbar() {
         className="nav-child"
         onClick={() => setActivePage("services")}
         component="a"
-        href="Services"
+        href="services"
         style={{
           textDecoration: page === "services" ? "underline" : "none",
           textDecorationColor: "#00aeef",

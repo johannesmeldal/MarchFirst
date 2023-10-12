@@ -53,7 +53,7 @@ export default function HamburgerLinks({ show }: props) {
       <Typography
         onClick={() => setActivePage("services")}
         component="a"
-        href="Services"
+        href="services"
         sx={{
           ...style,
           textDecoration: page === "services" ? "underline" : "none",

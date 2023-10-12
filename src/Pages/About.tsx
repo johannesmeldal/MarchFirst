@@ -76,10 +76,22 @@ export default function AboutUs() {
 
   return (
     <div className="about-container">
-      <Typography variant="h4" component="p">
-        DETTE ER OSS:
-      </Typography>
-      <hr />
+      <div
+        style={{
+          borderBottom: "1px solid #00aeef",
+        }}
+      >
+        {" "}
+        <Typography
+          sx={{
+            marginBottom: "1vh",
+          }}
+          variant="h4"
+          component="p"
+        >
+          {language ? "THIS IS US:" : "DETTE ER OSS:"}
+        </Typography>
+      </div>
       <div className="partner-div">
         <Card
           onClick={() => handleClick("petter")}
@@ -110,9 +122,9 @@ export default function AboutUs() {
               </Typography>
               <Typography variant="body2">
                 <br />
-                Telefon: +47 951 46 999
+                {language ? "Phone:" : "Telefon:"} +47 951 46 999
                 <br /> <br />
-                E-post: pma@marchfirst.no
+                {language ? "E-mail:" : "E-post:"} pma@marchfirst.no
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -145,9 +157,9 @@ export default function AboutUs() {
               </Typography>
               <Typography variant="body2">
                 <br />
-                Telefon: +47 995 44 421 <br />
+                {language ? "Phone:" : "Telefon:"} +47 995 44 421 <br />
                 <br />
-                E-post: aa@marchfirst.no
+                {language ? "E-mail:" : "E-post:"} aa@marchfirst.no
               </Typography>
             </CardContent>
           </CardActionArea>
