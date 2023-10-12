@@ -1,4 +1,32 @@
 export const Text = {
+  home: {
+    introText: {
+      header: {
+        norwegian: "Hjem",
+        english: "Home",
+      },
+      text: {
+        norwegian:
+          "MarchFirst Norway AS er et investerings- og rådgivningsselskap som fokuserer på verdiskapning i tilknyttede selskaper og for utvalgte klienter.",
+        english:
+          "MarchFirst Norway AS is an investment and advisory company focusing on value creation in associated companies and for selected clients.",
+      },
+    },
+  },
+  services: {
+    introText: {
+      header: {
+        norwegian: "Tjenester",
+        english: "Services",
+      },
+      text: {
+        norwegian:
+          "Vår uavhengighet betyr at vi tilbyr upartisk og objektiv rådgivning for å maksimere verdiene for våre kunder.",
+        english:
+          "Our independence means that we offer impartial and objective advice to maximize the values for our customers.",
+      },
+    },
+  },
   aboutUs: {
     introText: {
       header: {
@@ -7,9 +35,9 @@ export const Text = {
       },
       text: {
         norwegian:
-          "MarchFirst Norway AS er et investerings- og rådgivningsselskap som fokuserer på verdiskapning i tilknyttede selskaper og for utvalgte klienter.",
+          "Vi i March First er et dedikert team med erfaring fra ulike selskaper, klare til å hjelpe deg. Ikke nøl med å ta kontakt hvis du ønsker å ta en uforpliktende prat!",
         english:
-          "MarchFirst Norway AS is an investment and advisory company focusing on value creation in associated companies and for selected clients.",
+          "We at March First are a dedicated team with experience from various companies, ready to help you. Do not hesitate to contact us if you want to have a non-committal chat!",
       },
     },
     petter: {
@@ -37,6 +65,20 @@ export const Text = {
         "He has also worked with workouts at Danske Bank and financial and strategic restructuring in the Nordics.",
         "Alex has over 30 years of experience in M&A and the issuance market in various asset classes and sectors. He has held senior positions in New York and Oslo.",
       ],
+    },
+  },
+  contact: {
+    introText: {
+      header: {
+        norwegian: "Kontakt",
+        english: "Contact",
+      },
+      text: {
+        norwegian:
+          "MarchFirst Norway AS er et investerings- og rådgivningsselskap som fokuserer på verdiskapning i tilknyttede selskaper og for utvalgte klienter.",
+        english:
+          "MarchFirst Norway AS is an investment and advisory company focusing on value creation in associated companies and for selected clients.",
+      },
     },
   },
 };

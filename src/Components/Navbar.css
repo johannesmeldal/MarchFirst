@@ -1,6 +1,5 @@
 .nav-container {
   z-index: 1;
-  top: 0;
   width: 40vw;
   height: 15vh;
   margin-left: 60vw;
@@ -12,9 +11,16 @@
   justify-content: center;
   align-items: center;
   position: sticky;
-  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); */
 }
 
+/* @media screen and (max-width: 1150px) {
+  .nav-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    height: 100%;
+  }
+} */
 .nav-container ul {
   list-style: none;
   padding: 0;
@@ -36,8 +42,3 @@
   color: #fff;
   text-decoration: underline;
 }
-
-/* .active-page {
-  color: #fff;
-  text-decoration: underline;
-} */

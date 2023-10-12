@@ -1,5 +1,6 @@
 .background {
   height: 80%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   padding: 4vw 4vw 0vw 4vw;

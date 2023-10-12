@@ -17,5 +17,14 @@ function getLanguageLocalstorage() {
 
 export const recoilPage = atom({
   key: "recoilPageAtom",
-  default: "home" as string,
+  default: getPageSessionstorage() as string,
 });
+
+function getPageSessionstorage() {
+  const page: string = JSON.parse(sessionStorage.getItem("activePage")!);
+  if (page === null) {
+    sessionStorage.setItem("activePage", JSON.stringify("home"));
+    return "home";
+  }
+  return page;
+}

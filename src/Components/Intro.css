@@ -1,9 +1,8 @@
 .intro-container {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #04243c;
-  padding: 5vh 0 12vh 10vh;
-  z-index: -1;
+  /* padding: 5vh 0 12vh 10vh; */
 }

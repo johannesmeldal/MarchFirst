@@ -54,7 +54,7 @@ export default function Footer() {
               </Typography>
             </li>
             <li>
-              <Typography className="link" component="a" href="aboutus">
+              <Typography className="link" component="a" href="about">
                 ABOUT US
               </Typography>
             </li>
