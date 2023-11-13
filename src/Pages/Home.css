@@ -27,3 +27,14 @@
   margin-left: 3vw;
   margin-right: 3vw;
 }
+
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  
+}

@@ -26,6 +26,8 @@
 
 .nav-show-btn {
   display: none !important;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 @media screen and (max-width: 1000px) {

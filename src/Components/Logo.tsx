@@ -6,20 +6,24 @@ import norwayflag from "../Images/flag_norway.png";
 import ukflag from "../Images/flag_uk.png";
 import { useRecoilState } from "recoil";
 import { recoilLanguage } from "../Recoil/atoms";
+import { useEffect } from "react";
 
 export default function Logo() {
   const navigate = useNavigate();
-
   const [language, setLanguage] = useRecoilState(recoilLanguage);
 
   const handleLanguageChange = (lang: string) => {
-    setLanguage(lang === "ENG" ? true : false);
-    if (lang === "ENG") {
-      localStorage.setItem("language", JSON.stringify(true));
-    } else {
-      localStorage.setItem("language", JSON.stringify(false));
-    }
+    const newLanguage = lang === "ENG";
+    setLanguage(newLanguage);
+    localStorage.setItem("language", JSON.stringify(newLanguage));
   };
+
+  useEffect(() => {
+    const lang = localStorage.getItem("language");
+    if (lang) {
+      setLanguage(JSON.parse(lang));
+    }
+  }, [setLanguage]);
 
   return (
     <div className="logo-container">

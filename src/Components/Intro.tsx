@@ -66,15 +66,7 @@ export default function Intro() {
   return (
     <div className="intro-container">
       <div
-        style={{
-          width: "50%",
-          marginLeft: "5vw",
-          marginTop: "5vh",
-          marginBottom: "5vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-        }}
+        className="intro-text"
       >
         <Typography variant="h3">{getHeader()}</Typography>
         <Typography variant="body1">{getText()}</Typography>

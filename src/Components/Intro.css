@@ -4,5 +4,26 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #04243c;
-  /* padding: 5vh 0 12vh 10vh; */
+}
+
+.intro-text {
+  width: 50vw;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-container {
+    align-items: center;
+  }
+  .intro-text {
+    width: 90vw;
+    margin-left: 0;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
 }
