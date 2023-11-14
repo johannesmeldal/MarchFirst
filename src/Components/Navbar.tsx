@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import Typography from "@mui/material/Typography";
-import { recoilLanguage, recoilPage } from "../Recoil/atoms";
+import { recoilLanguage } from "../Recoil/atoms";
 import { useRecoilState } from "recoil";
 import { useState, useEffect } from "react";
 import HamburgerLinks from "./HamburgerLinks";
@@ -9,7 +9,6 @@ import { Squash as Hamburger } from "hamburger-react";
 
 export default function Navbar() {
   const [language] = useRecoilState(recoilLanguage);
-  const [page] = useRecoilState(recoilPage);
   const [hasShadow, setHasShadow] = useState(false);
   const [showHidden, setShowHidden] = useState(false);
 
@@ -47,8 +46,20 @@ export default function Navbar() {
     };
   }, []);
 
+  function getPage() {
+    const url = window.location.href;
+    const urlArray = url.split("/");
+    if (urlArray[urlArray.length - 1] === "") {
+      return "home";
+    }
+    const page = urlArray[urlArray.length - 1];
+
+    return page;
+  }
+
   function setActivePage(p: string) {
     sessionStorage.setItem("activePage", JSON.stringify(p));
+    // setPage(p);
   }
 
   useEffect(() => {
@@ -73,56 +84,72 @@ export default function Navbar() {
       </div>
 
       <Typography
-        className="nav-child"
+className="nav-child"
         onClick={() => setActivePage("home")}
         component="a"
         href="/"
-        style={{
-          textDecoration: page === "home" ? "underline" : "none",
+        sx={{
+          color: "secondary.light",
+          textDecoration: getPage() === "home" ? "underline" : "none",
           textDecorationColor: "#00aeef",
           fontWeight: "bold",
+          "&:hover": {
+            color: "text.primary",
+          },
         }}
       >
-        {language ? "HOME" : "HJEM"}
+        {language ? "HOME" : "HJEM"} {}
       </Typography>
 
       <Typography
-        className="nav-child"
+className="nav-child"
         onClick={() => setActivePage("services")}
         component="a"
         href="services"
-        style={{
-          textDecoration: page === "services" ? "underline" : "none",
+        sx={{
+          color: "secondary.light",
+          textDecoration: getPage() === "services" ? "underline" : "none",
           textDecorationColor: "#00aeef",
           fontWeight: "bold",
+          "&:hover": {
+            color: "text.primary",
+          },
         }}
       >
         {language ? "SERVICES" : "TJENESTER"}
       </Typography>
 
       <Typography
-        className="nav-child"
+className="nav-child"
         onClick={() => setActivePage("about")}
         component="a"
         href="about"
-        style={{
-          textDecoration: page === "about" ? "underline" : "none",
+        sx={{
+          color: "secondary.light",
+          textDecoration: getPage() === "about" ? "underline" : "none",
           textDecorationColor: "#00aeef",
           fontWeight: "bold",
+          "&:hover": {
+            color: "text.primary",
+          },
         }}
       >
         {language ? "ABOUT" : "OM OSS"}
       </Typography>
 
       <Typography
-        className="nav-child"
+className="nav-child"
         onClick={() => setActivePage("contact")}
         component="a"
         href="contact"
         sx={{
-          textDecoration: page === "contact" ? "underline" : "none",
+          color: "secondary.light",
+          textDecoration: getPage() === "contact" ? "underline" : "none",
           textDecorationColor: "#00aeef",
           fontWeight: "bold",
+          "&:hover": {
+            color: "text.primary",
+          },
         }}
       >
         {language ? "CONTACT" : "KONTAKT"}

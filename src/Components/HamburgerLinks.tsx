@@ -34,8 +34,7 @@ export default function HamburgerLinks({ show }: props) {
         alignItems: "center",
         justifyContent: "center",
         display: show ? "flex" : "none",
-        marginTop: "5vh",
-        marginBottom: "5vh",
+        marginBottom: "3vh",
       }}
     >
       <Typography

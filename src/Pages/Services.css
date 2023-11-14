@@ -2,13 +2,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #024f76;
-}
-
-.prompt-text {
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
 }

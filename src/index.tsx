@@ -4,9 +4,9 @@ import "./index.css";
 import App from "./App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
-import About from "./Pages/About";
+import About from "./Pages/About/About";
 import Services from "./Pages/Services";
-import Contact from "./Pages/Contact";
+import Contact from "./Pages/Contact/Contact";
 import { RecoilRoot } from "recoil";
 
 export const router = createBrowserRouter([

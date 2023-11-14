@@ -1,0 +1,17 @@
+.contact-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #024f76;
+  text-align: center;
+}
+
+.partner-div {
+  color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10vh;
+}

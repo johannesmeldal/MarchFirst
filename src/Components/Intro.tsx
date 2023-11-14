@@ -65,11 +65,9 @@ export default function Intro() {
   }
   return (
     <div className="intro-container">
-      <div
-        className="intro-text"
-      >
+      <div className="intro-text">
         <Typography variant="h3">{getHeader()}</Typography>
-        <Typography variant="body1">{getText()}</Typography>
+        <Typography variant="body2">{getText()}</Typography>
       </div>
     </div>
   );

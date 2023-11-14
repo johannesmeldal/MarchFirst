@@ -1,5 +1,4 @@
 .background {
-  height: 80%;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -36,5 +35,4 @@
     margin-left: 3vw;
     margin-right: 3vw;
   }
-  
 }
