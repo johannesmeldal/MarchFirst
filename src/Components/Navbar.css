@@ -1,8 +1,8 @@
-.nav-container {
+/* .nav-container {
   z-index: 1;
   height: 15vh;
   width: 40vw;
-  margin-left: 60vw;
+  margin-left: 10vw;
   background-color: #1c4673;
   text-align: center;
   font-size: 15px;
@@ -12,7 +12,7 @@
   align-items: center;
   position: sticky;
   top: 0;
-}
+} */
 
 .nav-child {
   text-decoration: none;

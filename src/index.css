@@ -1,7 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "raleway"; /* Give your font a name */
+  src: url("./Components/Font/Raleway-VariableFont_wght.ttf") format("truetype"); /* Point to the font file */
+  /* Add additional formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
-  /* color: aliceblue; */
+  font-family: "raleway";
+  color: aliceblue;
 }
 
 #root {

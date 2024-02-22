@@ -1,42 +1,40 @@
 import React from "react";
 import "./Footer.css";
 import img from "../Images/MF_letter.png";
-import Typography from "@mui/material/Typography";
 import GoogleMaps from "./GoogleMaps";
 
 export default function Footer() {
   return (
     <div className="foot">
-      {/* <img className="the-m" src={img} alt="M" /> */}
       <img className="the-m" src={img} alt="M" />
       <div className="foot-grid-container">
         <div className="grid-item1">
           <span>
             <ul>
               <li>
-                <Typography variant="h6">Marchfirst Norway AS</Typography>
+                <p >Marchfirst Norway AS</p>
               </li>
               <li>
-                <Typography variant="body1">Org.nr: 980 705 617</Typography>
+                <p >Org.nr: 980 705 617</p>
               </li>
               <li>
-                <Typography variant="body1">
+                <p >
                   Telefon: +47 22 83 40 00
-                </Typography>
+                </p>
               </li>
               <li>
-                <Typography variant="body1">
+                <p >
                   Besøksadresse:
                   <br />
                   <span>Drammensveien 130, 0277 Oslo</span>
-                </Typography>
+                </p>
               </li>
               <li>
-                <Typography variant="body1">
+                <p>
                   Postadresse:
                   <br />
                   <span>Skjellestadåsen 16, 1389 Heggedal</span>
-                </Typography>
+                </p>
               </li>
             </ul>
           </span>
@@ -44,24 +42,24 @@ export default function Footer() {
         <div className="grid-item2">
           <ul className="link-list">
             <li>
-              <Typography className="link" component="a" href="/">
+              <a className="link" href="/">
                 HOME
-              </Typography>
+              </a>
             </li>
             <li>
-              <Typography className="link" component="a" href="services">
+              <a className="link" href="services">
                 SERVICES
-              </Typography>
+              </a>
             </li>
             <li>
-              <Typography className="link" component="a" href="about">
+              <a className="link" href="about">
                 ABOUT US
-              </Typography>
+              </a>
             </li>
             <li>
-              <Typography className="link" component="a" href="contact">
+              <a className="link" href="contact">
                 CONTACT
-              </Typography>{" "}
+              </a>{" "}
             </li>
           </ul>
         </div>

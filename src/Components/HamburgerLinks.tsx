@@ -1,89 +1,70 @@
-import React from "react";
-import Typography from "@mui/material/Typography";
-import { recoilLanguage, recoilPage } from "../Recoil/atoms";
+import React, { useCallback, useEffect, useState } from "react";
+import { recoilLanguage, recoilPage, recoilShowHidden } from "../Recoil/atoms";
 import { useRecoilState } from "recoil";
+import { Squash as Hamburger } from "hamburger-react";
 
-interface props {
-  show: boolean;
-}
-
-export default function HamburgerLinks({ show }: props) {
+export default function HamburgerLinks() {
   const [language] = useRecoilState(recoilLanguage);
-  const [page] = useRecoilState(recoilPage);
+  const [showHidden, setShowHidden] = useRecoilState(recoilShowHidden);
 
   function setActivePage(p: string) {
     sessionStorage.setItem("activePage", JSON.stringify(p));
   }
 
-  const style = {
-    textDecoration: "none",
-    textDecorationColor: "#00aeef",
-    fontWeight: "bold",
-    color: "#b4daed",
-    "&:hover": {
-      textDecoration: "underline",
-      color: "#fff",
-    },
-  };
+  const [isWindowSmaller, setIsWindowSmaller] = useState(
+    window.innerWidth < 1000
+  );
+
+  useCallback(() => {
+    if (window.innerWidth > 1000) {
+      setShowHidden(false);
+    }
+  }
+  , [setShowHidden]);
+
+  // Add an event listener to track window width changes
+  useEffect(() => {
+    function handleResize() {
+      setIsWindowSmaller(window.innerWidth > 1000);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div
-      className="hidden-nav-container"
+      className="lg:hidden w-full h-auto flex justify-evenly items-center text-[15px] text-[#002338]"
       style={{
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        display: show ? "flex" : "none",
         marginBottom: "3vh",
       }}
     >
-      <Typography
-        onClick={() => setActivePage("home")}
-        component="a"
-        href="/"
-        sx={{
-          ...style,
-          textDecoration: page === "home" ? "underline" : "none",
-        }}
-      >
-        {language ? "HOME" : "HJEM"}
-      </Typography>
+      <Hamburger color="#b4daed" toggled={showHidden} toggle={setShowHidden} />
+      {showHidden && (
+        <>
+          <a onClick={() => setActivePage("home")} href="/">
+            {language ? "HOME" : "HJEM"}
+          </a>
 
-      <Typography
-        onClick={() => setActivePage("services")}
-        component="a"
-        href="services"
-        sx={{
-          ...style,
-          textDecoration: page === "services" ? "underline" : "none",
-        }}
-      >
-        {language ? "SERVICES" : "TJENESTER"}
-      </Typography>
+          <a onClick={() => setActivePage("services")} href="services">
+            {language ? "SERVICES" : "TJENESTER"}
+          </a>
 
-      <Typography
-        onClick={() => setActivePage("about")}
-        component="a"
-        href="about"
-        sx={{
-          ...style,
-          textDecoration: page === "about" ? "underline" : "none",
-        }}
-      >
-        {language ? "ABOUT" : "OM OSS"}
-      </Typography>
+          <a onClick={() => setActivePage("about")} href="about">
+            {language ? "ABOUT" : "OM OSS"}
+          </a>
 
-      <Typography
-        onClick={() => setActivePage("contact")}
-        component="a"
-        href="contact"
-        sx={{
-          ...style,
-          textDecoration: page === "contact" ? "underline" : "none",
-        }}
-      >
-        {language ? "CONTACT" : "KONTAKT"}
-      </Typography>
+          <a onClick={() => setActivePage("contact")} href="contact">
+            {language ? "CONTACT" : "KONTAKT"}
+          </a>
+        </>
+      )}
     </div>
   );
 }

@@ -12,23 +12,6 @@ export default function Projects() {
 
   return (
     <div className="projects-container">
-      {Text.projects.map((project, index) => (
-        <Card sx={{ width: "100%" }}>
-          <CardMedia />
-          <CardContent>
-            <Typography>{project.year}</Typography>
-            <Typography>{project.name}</Typography>
-            <Typography>
-              {language
-                ? project.description.english
-                : project.description.norwegian}
-            </Typography>
-            <Typography>
-              {language ? project.role.english : project.role.norwegian}
-            </Typography>
-          </CardContent>
-        </Card>
-      ))}
     </div>
   );
 }

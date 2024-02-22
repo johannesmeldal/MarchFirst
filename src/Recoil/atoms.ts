@@ -28,3 +28,9 @@ function getPageSessionstorage() {
   }
   return page;
 }
+
+export const recoilShowHidden = atom({
+  key: "recoilShowHiddenAtom",
+  default: false,
+});
+

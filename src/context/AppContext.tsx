@@ -30,7 +30,7 @@ const darkTheme = createTheme({
     },
   },
   typography: {
-    // fontFamily: ThemePalette.FONT_GLOBAL,
+    fontFamily: "raleway",
     fontSize: 20,
   },
   components: {

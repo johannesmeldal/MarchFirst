@@ -1,37 +1,3 @@
-.logo-container {
-  /* border-style: solid;
-  border-color: rgb(127, 255, 212); */
-  width: 100vw;
-  height: 40vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-image {
-  z-index: 1;
-  height: 20vh;
-  margin-left: 3vw;
-}
-
-.logo-image:hover {
-  cursor: pointer;
-}
-
-.language-chooser {
-  width: 10vw;
-  margin-right: 3vw;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.activeLang {
-  border-bottom: 4px solid #00aeef;
-  /* border: 1px solid #7ccdf5; */
-}
 
 .flag {
   z-index: 1;
