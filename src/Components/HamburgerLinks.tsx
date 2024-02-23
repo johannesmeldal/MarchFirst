@@ -11,21 +11,22 @@ export default function HamburgerLinks() {
     sessionStorage.setItem("activePage", JSON.stringify(p));
   }
 
-  const [isWindowSmaller, setIsWindowSmaller] = useState(
-    window.innerWidth < 1000
-  );
+  // const [isWindowSmaller, setIsWindowSmaller] = useState(
+  //   window.innerWidth < 1000
+  // );
 
-  useCallback(() => {
-    if (window.innerWidth > 1000) {
-      setShowHidden(false);
-    }
-  }
-  , [setShowHidden]);
+  // useCallback(() => {
+  //   if (isWindowSmaller) {
+  //     setShowHidden(false);
+  //   }
+  // }
+  // , [isWindowSmaller, setShowHidden]);
 
   // Add an event listener to track window width changes
   useEffect(() => {
     function handleResize() {
-      setIsWindowSmaller(window.innerWidth > 1000);
+      // setIsWindowSmaller(window.innerWidth > 1000);
+      setShowHidden(false);
     }
 
     window.addEventListener("resize", handleResize);
@@ -33,7 +34,7 @@ export default function HamburgerLinks() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [setShowHidden]);
 
   return (
     <div

@@ -2,22 +2,24 @@ import "./Intro.css";
 import { useRecoilState } from "recoil";
 import { recoilLanguage } from "../Recoil/atoms";
 import { Text } from "../TextDatabase/TextObj";
-import img from "../Images/Munkedamsveien.png";
+import munkedamsveien_img from "../Images/Munkedamsveien.png";
 
 export default function Intro() {
   const [language] = useRecoilState(recoilLanguage);
 
   return (
-    <div className="bg-[#04243c] flex h-[50vh] tex">
+    <div className="bg-[#04243c] flex flex-col h-auto justify-center gap-10 items-center lg:flex-row">
       <img
         style={{ objectFit: "cover" }}
-        src={img}
+        src={munkedamsveien_img}
         alt="Munkedamsveien"
-        className="w-[50vw] h-[50vh] object-cover"
+        className="w-[100vw] h-[50vh] object-cover lg:w-6/12"
       />
-      <div className=" w-6/12 items-center flex flex-col justify-evenly">
-        <p className="w-6/12 text-lg lg:text-2xl ">
-          {Text.home.introText.text.norwegian}
+      <div className="  items-center flex flex-col justify-evenly mb-10 lg:w-6/12 ">
+        <p className="text-xl text-[#FAFAFA] w-[80vw] border-l-2 pl-5 border-[#C44404] lg:w-6/12 lg:text-2xl">
+          {language
+            ? Text.home.introText.text.english
+            : Text.home.introText.text.norwegian}
         </p>
       </div>
     </div>

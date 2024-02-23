@@ -1,6 +1,5 @@
 import React from "react";
 import img from "../Images/Logo-stor.png";
-import "./Logo.css";
 import { useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { recoilLanguage } from "../Recoil/atoms";
@@ -27,7 +26,6 @@ export default function Logo() {
 
   return (
     <div
-      // className="logo-container"
       className="h-[24vh] flex
       text-[#002338] 
       text-center text-[15px] justify-evenly items-center "
@@ -40,11 +38,11 @@ export default function Logo() {
       />
       <Navbar />
       <div
-        className="flex flex-row hover:underline cursor-pointer"
+        className=" h-20 flex flex-row hover:border-b-4 hover:border-[#0174BD] cursor-pointer gap-1"
         onClick={() => handleLanguageChange(language ? "NOR" : "ENG")}
       >
-        <p>{language ? "ENG" : "NOR"}</p>
-        <BsArrowDown className=" m-1" />
+        <p className="text-2xl mt-12">{language ? "ENG" : "NOR"}</p>
+        <BsArrowDown className=" mt-14" />
       </div>
     </div>
   );
