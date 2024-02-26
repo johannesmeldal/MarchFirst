@@ -66,6 +66,74 @@ export const Text = {
         "Alex has over 30 years of experience in M&A and the issuance market in various asset classes and sectors. He has held senior positions in New York and Oslo. ",
       ],
     },
+    introTop: {
+      norwegian:
+        "Marchfirst fortsetter å vokse og utvikle seg sammen med våre klienter, drevet av et engasjement for å skape varig verdi.",
+      english:
+        "Marchfirst continues to grow and evolve together with our clients, driven by a commitment to create lasting value.",
+    },
+    introBody: {
+      norwegian:
+        "Med et dedikert team på 6 eksperter har vi med suksess gjennomført over 50 transaksjoner som rådgiver og investor. Vår erfaring spenner over en bred rekke av SMB-bedrifter i ulike bransjer, noe som vitner om vår evne til å tilpasse oss og levere resultater på tvers av sektorer.",
+      english:
+        "With a dedicated team of 6 experts, we have successfully completed over 50 transactions as advisor and investor. Our experience spans a wide range of SME companies in various industries, which testifies to our ability to adapt and deliver results across sectors.",
+    },
+    values: {
+      header: {
+        norwegian: "Kjernen i Marchfirst er våre verdier:",
+        english: "At the core of Marchfirst are our values:",
+      },
+      bullet1: {
+        norwegian: "Integritet",
+        english: "Integrity",
+      },
+      bullet2: {
+        norwegian: "Grundighet",
+        english: "Thoroughness",
+      },
+      bullet3: {
+        norwegian: "Utholdenhet",
+        english: "Perseverance",
+      },
+      text: {
+        norwegian:
+          "Disse verdiene gjenspeiles i alt vi gjør og er fundamentet for vår tilnærming til hver eneste oppgave og utfordring.",
+        english:
+          "These values are reflected in everything we do and are the foundation of our approach to every task and challenge.",
+      },
+    },
+    history: {
+      header: {
+        norwegian: "Historien vår",
+        english: "Our history",
+      },
+      body: {
+        norwegian:
+          "Marchfirst ble grunnlagt i 2003 av Petter Mannsverk Andresen og hans forretningspartner Christian Wessel. Siden starten har vi utviklet oss til å bli en ledende aktør innenfor våre kjerneområder: strategisk og finansiell analyse. Vi spesialiserer oss på Corporate Finance rådgivning og aktivt eierskap, og kombinerer disse feltene for å tilby våre klienter unike og verdiskapende løsninger. ",
+        english:
+          "Marchfirst was founded in 2003 by Petter Mannsverk Andresen and his business partner Christian Wessel. Since the start, we have developed into a leading player within our core areas: strategic and financial analysis. We specialize in Corporate Finance advisory and active ownership, and combine these fields to offer our clients unique and value-creating solutions. ",
+      },
+    },
+    process: {
+      intro: {
+        header: {
+          norwegian: "Vår prosess",
+          english: "Our process",
+        },
+        text: {
+          norwegian:
+            "Vi spesialiserer oss på transaksjonsorienterte tjenester med fokus på industrielle løsninger for å maksimere verdi for våre klienter.",
+          english:
+            "We specialize in transaction-oriented services with a focus on industrial solutions to maximize value for our clients.",
+        },
+      },
+      body: {
+        norwegian:
+          "Vår tilnærming er grundig, med dyptgående forståelse for kapitalmarkeder og klientbehov. Som uavhengige finansielle rådgivere prioriterer vi kvalitet, hastighet og konfidensialitet, samtidig som vi opprettholder tett dialog og leder prosjekter mot felles mål. Vårt arbeid bygger på integritet og empati, noe som har sikret oss et sterkt omdømme og gjentatte forretninger. Vi har tilgang til topp moderne databaser og nettverk for å støtte beslutningstaking. Vår uavhengighet sikrer konfliktfri rådgivning, og vi samarbeider med eksterne eksperter for å levere de beste løsningene. Suksess for våre klienter er vår suksess.",
+        english:
+          "Our approach is thorough, with in-depth understanding of capital markets and client needs. As independent financial advisors, we prioritize quality, speed and confidentiality, while maintaining close dialogue and leading projects towards common goals. Our work is based on integrity and empathy, which has secured us a strong reputation and repeated business. We have access to state-of-the-art databases and networks to support decision-making. Our independence ensures conflict-free advice, and we collaborate with external experts to deliver the best solutions. Success for our clients is our success.",
+      },
+    },
   },
   contact: {
     introText: {

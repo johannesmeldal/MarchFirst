@@ -1,6 +1,5 @@
 import React from "react";
 import "./Services.css";
-import Projects from "../Components/Projects";
 import { useRecoilState } from "recoil";
 import { recoilLanguage } from "../Recoil/atoms";
 

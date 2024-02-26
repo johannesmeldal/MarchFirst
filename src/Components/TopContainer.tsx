@@ -41,7 +41,7 @@ export default function Logo() {
         className=" h-20 flex flex-row hover:border-b-4 hover:border-[#0174BD] cursor-pointer gap-1"
         onClick={() => handleLanguageChange(language ? "NOR" : "ENG")}
       >
-        <p className="text-2xl mt-12">{language ? "ENG" : "NOR"}</p>
+        <p className="text-2xl mt-12">{language ? "NOR" : "ENG"}</p>
         <BsArrowDown className=" mt-14" />
       </div>
     </div>

@@ -1,14 +1,18 @@
 import React from "react";
-import "./AboutUs.css";
-import { useRecoilState } from "recoil";
-import { recoilLanguage } from "../../Recoil/atoms";
-import PartnerInfo from "./PartnerInfo";
+import AboutIntro from "./AboutIntro";
+import Values from "./Values";
+import History from "./History";
+import ProcessIntro from "./ProcessIntro";
+import Process from "./Process";
 
 export default function AboutUs() {
-  const [language] = useRecoilState(recoilLanguage);
-
   return (
-    <div className="about-container">
-    </div>
+    <>
+      <AboutIntro />
+      <Values />
+      <History />
+      <ProcessIntro />
+      <Process />
+    </>
   );
 }

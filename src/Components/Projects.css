@@ -1,9 +1,0 @@
-.projects-container {
-  align-items: center;
-  width: 80vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5vh 2vw;
-  align-items: center;
-  margin-bottom: 10vh;
-}

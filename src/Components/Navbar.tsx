@@ -5,17 +5,6 @@ import { useRecoilState } from "recoil";
 export default function Navbar() {
   const [language] = useRecoilState(recoilLanguage);
 
-  // function getPage() {
-  //   const url = window.location.href;
-  //   const urlArray = url.split("/");
-  //   if (urlArray[urlArray.length - 1] === "") {
-  //     return "home";
-  //   }
-  //   const page = urlArray[urlArray.length - 1];
-
-  //   return page;
-  // }
-
   function setActivePage(p: string) {
     sessionStorage.setItem("activePage", JSON.stringify(p));
   }

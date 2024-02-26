@@ -4,7 +4,7 @@ import { BsCircle } from "react-icons/bs";
 
 function Consulting() {
   return (
-    <div className="h-auto text-[#351725] bg-[#F5F5F7] flex flex-row justify-evenly">
+    <div className="h-auto text-[#351725] bg-[#F5F5F7] flex flex-row justify-evenly pb-[20vh]">
       <div className="flex flex-col w-6/12 text-xl mt-10 mb-10">
         <p className="text-2xl mb-10">Rådgivning</p>
         <p>

@@ -5,7 +5,6 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import { useRecoilState } from "recoil";
 import { recoilLanguage } from "../Recoil/atoms";
-import "./Projects.css";
 
 export default function Projects() {
   const [language] = useRecoilState(recoilLanguage);
