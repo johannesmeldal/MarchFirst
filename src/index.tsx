@@ -5,7 +5,7 @@ import App from "./App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About/About";
-import Services from "./Pages/References/Services";
+import References from "./Pages/References/References";
 import Contact from "./Pages/Contact/Contact";
 import { RecoilRoot } from "recoil";
 
@@ -19,8 +19,8 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "services",
-        element: <Services />,
+        path: "references",
+        element: <References />,
       },
       {
         path: "about",

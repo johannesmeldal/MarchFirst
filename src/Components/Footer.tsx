@@ -1,9 +1,13 @@
 import React from "react";
 import the_m_img from "../Images/MF_letter.png";
-// import GoogleMaps from "./GoogleMaps";
+
 import { BsLinkedin } from "react-icons/bs";
+import { recoilLanguage } from "../Recoil/atoms";
+import { useRecoilState } from "recoil";
 
 export default function Footer() {
+  const [language] = useRecoilState(recoilLanguage);
+
   return (
     <>
       <div className="bg-[#233F56] flex flex-col lg:flex-row justify-evenly pt-10 pb-10 items-center text-[#728DA8]">
@@ -32,13 +36,13 @@ export default function Footer() {
           </div>
           <div className="flex flex-col lg:border-l-2 pl-5 border-[#728DA8]">
             <a className="hover:text-[#FFFFFF]" href="/">
-              HOME
+              {language ? "HOME" : "HJEM"}
             </a>
-            <a className="hover:text-[#FFFFFF]" href="services">
-              SERVICES
+            <a className="hover:text-[#FFFFFF]" href="references">
+              {language ? "REFERENCES" : "REFERANSER"}
             </a>
             <a className="hover:text-[#FFFFFF]" href="about">
-              ABOUT US
+              {language ? "ABOUT US" : "OM OSS"}
             </a>
           </div>
         </div>
@@ -48,33 +52,4 @@ export default function Footer() {
       </div>
     </>
   );
-  // <div className="grid-item3">
-  //       <GoogleMaps />
-  //     </div>
-
-  // <ul>
-  //             <li>
-  //               <p>Marchfirst Norway AS</p>
-  //             </li>
-  //             <li>
-  //               <p>Org.nr: 980 705 617</p>
-  //             </li>
-  //             <li>
-  //               <p>Telefon: +47 22 83 40 00</p>
-  //             </li>
-  //             <li>
-  //               <p>
-  //                 Besøksadresse:
-  //                 <br />
-  //                 <span>Drammensveien 130, 0277 Oslo</span>
-  //               </p>
-  //             </li>
-  //             <li>
-  //               <p>
-  //                 Postadresse:
-  //                 <br />
-  //                 <span>Skjellestadåsen 16, 1389 Heggedal</span>
-  //               </p>
-  //             </li>
-  //           </ul>
 }

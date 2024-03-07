@@ -21,10 +21,10 @@ export default function Navbar() {
 
       <a
         className=" hover:border-b-4 hover:border-[#0174BD]"
-        onClick={() => setActivePage("services")}
-        href="services"
+        onClick={() => setActivePage("references")}
+        href="references"
       >
-        {language ? "SERVICES" : "TJENESTER"}
+        {language ? "REFERENCES" : "REFERANSER"}
       </a>
 
       <a

@@ -34,3 +34,7 @@ export const recoilShowHidden = atom({
   default: false,
 });
 
+export const recoilShowYear = atom({
+  key: "recoilShowYearAtom",
+  default: 2022 as number,
+});
